@@ -3,38 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram WebApp Spiel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-    </style>
+    <title>BTR Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Willkommen zu deinem Spiel!</h1>
-        <button onclick="startGame()">Spiel starten</button>
-    </div>
+    <!-- Oberer Bereich -->
+    <header>
+        <button class="close-btn">Schließen</button>
+        <div class="header-info">
+            <h1>BTR Game</h1>
+            <div class="profile">
+                <img src="profilbild.png" alt="Profilbild" class="profile-pic">
+                <span class="username">SK47 (CEO)</span>
+                <span class="keys">15 🔑</span>
+            </div>
+        </div>
+    </header>
 
-    <script>
-        function startGame() {
-            alert("Spiel gestartet!");
-            // Hier kann die eigentliche Spiellogik implementiert werden.
-        }
-    </script>
+    <!-- Mittlerer Bereich -->
+    <section class="main-content">
+        <div class="actions">
+            <div class="action">
+                <button>Daily reward</button>
+                <span>03:07</span>
+            </div>
+            <div class="action">
+                <button>Tägliches Rätsel</button>
+                <span>22:07</span>
+            </div>
+            <div class="action">
+                <button>Tägliches Kombo</button>
+                <span>15:07</span>
+            </div>
+            <div class="action">
+                <button>Minigames</button>
+            </div>
+        </div>
+
+        <div class="coins">
+            <h2>290,060,918 💰</h2>
+        </div>
+
+        <div class="character-section">
+            <img src="charakter.png" alt="Charakter" class="character">
+            <div class="stats">
+                <p>⚡ 5500 / 5500</p>
+                <p>🚀 Boost</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unterer Bereich -->
+    <footer>
+        <button>Avatar</button>
+        <button>Next Level</button>
+        <button>Bank</button>
+        <button>Aufgaben</button>
+        <button>Airdrop</button>
+        <button>Freunde</button>
+    </footer>
 </body>
 </html>
