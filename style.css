@@ -29,6 +29,12 @@ footer button {
         flex-direction: column; /* Stapelt Buttons untereinander auf kleineren Bildschirmen */
     }
 
+    .coins h2 {
+    text-align: center; /* Zentriert die Anzeige der Münzenanzahl */
+    font-size: 2em; /* Stellt die Schriftgröße ein */
+    color: #ffd700; /* Goldfarbe für das Bitcoin-Symbol und die Zahlen */
+}
+
     .action button, footer button {
         width: 100%; /* Volle Breite für bessere Erreichbarkeit */
         margin-bottom: 8px; /* Abstand zwischen gestapelten Buttons */
