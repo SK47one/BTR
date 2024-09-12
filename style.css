@@ -1,5 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1e;
+    color: #fff;
+    display: flex;
+    flexDirection: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 header {
-    background-color: #333; /* Dunklerer Hintergrund für besseren Kontrast */
+    background-color: #333;
     padding: 20px;
     text-align: center;
 }
@@ -7,28 +23,78 @@ header {
 .logo {
     width: 200px; /* Größeres Logo */
     height: auto;
-    margin: 0 auto; /* Zentrierung des Logos */
+    margin: 0 auto;
 }
 
-.character-section img {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px; /* Kreisförmiges Bild */
-    background-color: #ccc; /* Neutrale Farbe für den Platzhalter */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.action {
+    display: flex;
+    flexDirection: column;
+    alignItems: center;
+    gap: 5px;
+    background-color: #333;
+    borderRadius: 10px;
+    padding: 10px;
+    boxShadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.coins {
+    margin: 20px 0;
+}
+
+.character-section {
+    display: flex;
+    flexDirection: column;
+    alignItems: center;
+}
+
+.character {
+    width: 150px;
+    borderRadius: 50%;
+    border: 2px solid #fff;
+    background-color: #ccc;
     display: block;
-    margin: 10px auto; /* Zentrierung des Bildes */
+    margin: 10px auto;
+}
+
+.stats {
+    display: flex;
+    justifyContent: space-between;
+    width: 200px;
+    marginTop: 10px;
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    justifyContent: space-around;
+    padding: 10px 0;
+    fontSize: 14px;
+    fontFamily: 'Helvetica', sans-serif;
 }
 
 footer button {
-    background-color: #444;
+    backgroundColor: #444;
     color: #fff;
     border: none;
-    border-radius: 8px; /* Abgerundete Ecken */
+    borderRadius: 8px;
     padding: 10px;
     margin: 5px;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    transition: backgroundColor 0.3s;
 }
 
 footer button:hover {
-    background-color: #555; /* Hover-Effekt */
+    backgroundColor: #555;
 }
