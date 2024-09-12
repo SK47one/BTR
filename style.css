@@ -1,42 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 header {
-    background-color: #222; /* Dunkler für besseren Kontrast */
-    padding: 15px 0; /* Mehr vertikaler Raum */
+    padding: 10px 0;
     text-align: center;
 }
 
 .logo {
-    max-width: 100%; /* Stellt sicher, dass das Logo niemals über den Bildschirmrand hinausgeht */
+    width: 150px; /* Anpassung der Größe für bessere Ansicht */
     height: auto;
-    width: 180px; /* Eventuell anpassen, je nach Bedarf */
 }
 
-.character-section img {
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coins h2 {
+    font-size: 1.5em; /* Größere Schrift für bessere Lesbarkeit */
+    margin: 20px 0;
+}
+
+.character {
     width: 120px;
     height: 120px;
-    border-radius: 60px; /* Kreisförmig */
-    object-fit: cover; /* Sorgt dafür, dass das Bild den Container vollständig ausfüllt */
-    border: 3px solid white; /* Weißer Rand */
+    border-radius: 60px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
 }
 
 footer button {
-    flex-grow: 1; /* Buttons nehmen verfügbaren Raum gleichmäßig ein */
-    margin: 0 4px; /* Abstand zwischen den Buttons */
-    padding: 12px 0; /* Größere Klickfläche */
-}
-
-@media (max-width: 600px) {
-    .actions, footer {
-        flex-direction: column; /* Stapelt Buttons untereinander auf kleineren Bildschirmen */
-    }
-
-    .coins h2 {
-    text-align: center; /* Zentriert die Anzeige der Münzenanzahl */
-    font-size: 2em; /* Stellt die Schriftgröße ein */
-    color: #ffd700; /* Goldfarbe für das Bitcoin-Symbol und die Zahlen */
-}
-
-    .action button, footer button {
-        width: 100%; /* Volle Breite für bessere Erreichbarkeit */
-        margin-bottom: 8px; /* Abstand zwischen gestapelten Buttons */
-    }
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 0.9em;
 }
