@@ -58,3 +58,25 @@ footer button {
     padding: 10px 20px;
     font-size: 0.9em;
 }
+
+footer {
+    background-color: #333; /* Dunkleres Grau für besseren Kontrast */
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-top: 2px solid #555; /* Fügt eine Linie für visuelle Trennung hinzu */
+}
+
+footer button {
+    background-color: #555; /* Mittelgrau für die Buttons */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px; /* Passende Schriftgröße für bessere Lesbarkeit */
+    transition: background-color 0.3s; /* Sanfter Übergang bei Hover */
+}
+
+footer button:hover {
+    background-color: #666; /* Dunkleres Grau beim Hover für bessere Interaktivität */
+}
