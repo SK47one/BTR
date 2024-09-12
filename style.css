@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    width: 150px; /* Anpassung der Größe für bessere Ansicht */
+    width: 150px;
     height: auto;
 }
 
@@ -32,51 +32,64 @@ header {
 }
 
 .coins h2 {
-    font-size: 1.5em; /* Größere Schrift für bessere Lesbarkeit */
+    font-size: 1.8em; /* Etwas größere Schrift */
     margin: 20px 0;
+    color: #f1c40f; /* Goldene Farbe für Coins */
 }
 
 .character {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+    width: 140px; /* Etwas größere Avatars */
+    height: 140px;
+    border-radius: 50%; /* Perfekter Kreis */
     object-fit: cover;
     margin-bottom: 20px;
+    border: 2px solid #f1c40f; /* Goldene Umrandung */
 }
 
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 0;
-}
-
-footer button {
     background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 0.9em;
-}
-
-footer {
-    background-color: #333; /* Dunkleres Grau für besseren Kontrast */
     display: flex;
     justify-content: space-around;
     padding: 12px 0;
-    border-top: 2px solid #555; /* Fügt eine Linie für visuelle Trennung hinzu */
+    border-top: 2px solid #555;
 }
 
 footer button {
-    background-color: #555; /* Mittelgrau für die Buttons */
+    background-color: #555;
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 10px 15px;
-    font-size: 14px; /* Passende Schriftgröße für bessere Lesbarkeit */
-    transition: background-color 0.3s; /* Sanfter Übergang bei Hover */
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s; /* Sanfter Übergang bei Hover und Klick */
 }
 
 footer button:hover {
-    background-color: #666; /* Dunkleres Grau beim Hover für bessere Interaktivität */
+    background-color: #666;
+    transform: scale(1.05); /* Vergrößert leicht beim Hover */
+}
+
+footer button:active {
+    transform: scale(0.95); /* Leichtes Verkleinern beim Klicken */
+}
+
+/* Media Query für kleinere Geräte */
+@media (max-width: 768px) {
+    .logo {
+        width: 120px; /* Logo kleiner auf Mobilgeräten */
+    }
+
+    .coins h2 {
+        font-size: 1.5em; /* Coins Text etwas kleiner */
+    }
+
+    .character {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer button {
+        padding: 8px 10px; /* Kleinere Buttons */
+        font-size: 12px;
+    }
 }
