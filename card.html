@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bum2Rich - Karten Leveln</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-info">
+            <img src="Logo.png" alt="Bum2Rich Logo" class="logo">
+        </div>
+    </header>
+
+    <section class="main-content">
+        <h2>Karten Leveln</h2>
+        <p>Kaufe Karten und level sie auf!</p>
+        <div>
+            <p>Karten in deinem Besitz: <span id="cards">0</span></p>
+            <button onclick="buyCard()">Karte kaufen</button>
+            <button onclick="levelUpCard()">Karte leveln</button>
+        </div>
+    </section>
+
+    <footer>
+        <button onclick="window.location.href='index.html'">Zurück</button>
+    </footer>
+
+    <script>
+        let cards = 0;
+        let cardLevel = 1;
+
+        function buyCard() {
+            cards++;
+            document.getElementById("cards").innerText = cards;
+            alert("Du hast eine Karte gekauft!");
+        }
+
+        function levelUpCard() {
+            if (cards > 0) {
+                cardLevel++;
+                alert("Deine Karte hat Level " + cardLevel erreicht!");
+            } else {
+                alert("Du musst erst eine Karte kaufen.");
+            }
+        }
+    </script>
+</body>
+</html>
