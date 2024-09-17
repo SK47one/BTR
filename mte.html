@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bum2Rich - Move to Earn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-info">
+            <img src="Logo.png" alt="Bum2Rich Logo" class="logo">
+        </div>
+    </header>
+
+    <section class="main-content">
+        <h2>Move to Earn</h2>
+        <p>Verdiene Coins, indem du Schritte machst!</p>
+        <div>
+            <p>Deine Schritte: <span id="steps">0</span></p>
+            <p>Verdiente Coins: ₿ <span id="earned-coins">0</span></p>
+            <button onclick="simulateSteps()">Schritte machen</button>
+        </div>
+    </section>
+
+    <footer>
+        <button onclick="window.location.href='index.html'">Zurück</button>
+    </footer>
+
+    <script>
+        let steps = 0;
+        let earnedCoins = 0;
+
+        function simulateSteps() {
+            steps += 100; // Simuliert 100 Schritte
+            earnedCoins += steps * 0.01; // 1 Coin pro 100 Schritte
+            document.getElementById("steps").innerText = steps;
+            document.getElementById("earned-coins").innerText = earnedCoins.toFixed(2);
+        }
+    </script>
+</body>
+</html>
