@@ -17,18 +17,43 @@
     <!-- Mittlerer Bereich -->
     <section class="main-content">
         <h2>Next Level</h2>
-        <p>Erreiche das nächste Level und verdiene zusätzliche Coins!</p>
-        <button onclick="nextLevel()">Level Aufsteigen</button>
+        <p>Wähle eine Kategorie, um im Spiel aufzusteigen!</p>
+        
+        <!-- Move to Earn Button -->
+        <button class="cool-button" onclick="window.location.href='mte.html'">Move to Earn</button>
+        
+        <!-- Brain Training Button -->
+        <button class="cool-button" onclick="window.location.href='brain.html'">Brain Training</button>
+        
+        <!-- Karten Leveln Button -->
+        <button class="cool-button" onclick="window.location.href='card.html'">Karten Leveln</button>
     </section>
 
-    <!-- Footer bleibt unverändert -->
+    <!-- Unterer Bereich (Menü bleibt unverändert) -->
     <footer>
-        <button onclick="window.location.href='https://sk47one.github.io/BTR/index.html'">Avatar</button>
-        <button onclick="window.location.href='https://sk47one.github.io/BTR/next-level.html'">Next Level</button>
-        <button onclick="window.location.href='https://sk47one.github.io/BTR/bank.html'">Bank</button>
-        <button onclick="window.location.href='https://sk47one.github.io/BTR/aufgaben.html'">Aufgaben</button>
-        <button onclick="window.location.href='https://sk47one.github.io/BTR/airdrop.html'">Airdrop</button>
-        <button onclick="window.location.href='https://sk47one.github.io/BTR/freunde.html'">Freunde</button>
+        <button onclick="window.location.href='index.html'">Zurück</button>
     </footer>
+
+    <!-- Optionales CSS für coole Buttons -->
+    <style>
+        .cool-button {
+            background-color: #4CAF50; /* Grün */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .cool-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
 </body>
 </html>
